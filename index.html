@@ -1,1 +1,581 @@
-Hi\!
+<!DOCTYPE html>
+<head>
+  <title>Alteran Character Sheet</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <div class="header">
+    <h1>Alteran Character Sheet</h1>
+  </div>
+  <div class="column">
+    <div class="basic container">
+      <h2>Basic Information</h2>
+      <div class="entry">
+        <label for="Name">Name</label>
+        <input name="Name" id="Name" placeholder="Name" class="basic_input">
+      </div>
+      <div class="entry">
+        <label for="Race">Race</label>
+        <select class="race_select">
+          <option value="Select Race" class="race_option">Select Race</option>
+          <option value="-----------" class="race_option">-----------</option>
+          <option value="Human" class="race_option">Human</option>
+          <option value="Moon Elf" class="race_option">Moon Elf</option>
+          <option value="Sun Elf" class="race_option">Sun Elf</option>
+          <option value="Dwarf" class="race_option">Dwarf</option>
+          <option value="Little Folk" class="race_option">Little Folk</option>
+          <option value="Half-Breed" class="race_option">Half-Breed</option>
+        </select>
+      </div>
+      <div class="entry">
+        <label for="Age">Age</label>
+        <input name="Age" id="Age" placeholder="Age" class="basic_input">
+      </div>
+      <div class="entry">
+        <label for="Height">Height</label>
+        <input name="Height" id="Height" placeholder="Height" class="basic_input">
+      </div>
+      <div class="entry">
+        <label for="Weight">Weight</label>
+        <input name="Weight" id="Weight" placeholder="Weight" class="basic_input">
+      </div>
+      <div class="entry">
+        <label for="Eyes">Eyes</label>
+        <input name="Eyes" id="Eyes" placeholder="Eyes" class="basic_input">
+      </div>
+      <div class="entry">
+        <label for="Hair">Hair</label>
+        <input name="Hair" id="Hair" placeholder="Hair" class="basic_input">
+      </div>
+    </div>
+    <div class="class container">
+      <h2>Class Information</h2>
+      <div class="basic_class">
+        <h3>Basic Class</h3>
+        <div class="entry">
+          <select name="basic_class0" id="basic_class0" class="class_select">
+            <option value="Select Class" class="class_option">Select Class</option>
+            <option value="-----------" class="class_option">-----------</option>
+            <option value="Warrior" class="class_option">Warrior</option>
+            <option value="Scoundrel" class="class_option">Scoundrel</option>
+            <option value="Gifted" class="class_option">Gifted</option>
+          </select>
+          <input type="number" min="0" max="10" step="1" value="0" name="basic_level0" class="level_input">
+        </div>
+        <div class="entry">
+          <select name="basic_class1" id="basic_class1" class="class_select">
+            <option value="Select Class" class="class_option">Select Class</option>
+            <option value="-----------" class="class_option">-----------</option>
+            <option value="Warrior" class="class_option">Warrior</option>
+            <option value="Scoundrel" class="class_option">Scoundrel</option>
+            <option value="Gifted" class="class_option">Gifted</option>
+          </select>
+          <input type="number" min="0" max="10" step="1" value="0" name="basic_level1" class="level_input">
+        </div>
+        <div class="entry">
+          <select name="basic_class2" id="basic_class2" class="class_select">
+            <option value="Select Class" class="class_option">Select Class</option>
+            <option value="-----------" class="class_option">-----------</option>
+            <option value="Warrior" class="class_option">Warrior</option>
+            <option value="Scoundrel" class="class_option">Scoundrel</option>
+            <option value="Gifted" class="class_option">Gifted</option>
+          </select>
+          <input type="number" min="0" max="10" step="1" value="0" name="basic_level2" class="level_input">
+        </div>
+      </div>
+      <div class="advanced_class">
+        <h3>Advanced Class</h3>
+        <div class="entry">
+          <select name="advanced_class0" id="advanced_class0" class="class_select">
+            <option value="Select Class">Select Class</option>
+            <option value="-----------">-----------</option>
+            <option value="Alchemist">Alchemist</option>
+            <option value="Arcane Rogue">Arcane Rogue</option>
+            <option value="Artificer">Artificer</option>
+            <option value="Aspect Warrior">Aspect Warrior</option>
+            <option value="Berzerk">Berzerk</option>
+            <option value="Celestial Servant">Celestial Servant</option>
+            <option value="Druid">Druid</option>
+            <option value="Duelist">Duelist</option>
+            <option value="Force Knight">Force Knight</option>
+            <option value="Illusionist">Illusionist</option>
+            <option value="Keeper of Equilibrium">Keeper of Equilibrium</option>
+            <option value="Knight">Knight</option>
+            <option value="Mage Blade">Mage Blade</option>
+            <option value="Mechanist">Mechanist</option>
+            <option value="Noble">Noble</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Performer">Performer</option>
+            <option value="Ranger">Ranger</option>
+            <option value="Rune Warrior">Rune Warrior</option>
+            <option value="Vitamancer">Vitamancer</option>
+            <option value="Void Disciple">Void Disciple</option>
+            <option value="Wanderer">Wanderer</option>
+            <option value="Wizard">Wizard</option>
+            <option value="Weapon Master">Weapon Master</option>
+            <option value="Wild Mage">Wild Mage</option>
+          </select>
+          <input type="number" min="0" max="10" step="1" value="0" name="advanced_level0" class="level_input">
+        </div>
+        <div class="entry">
+          <select name="advanced_class1" id="advanced_class1" class="class_select">
+            <option value="Select Class">Select Class</option>
+            <option value="-----------">-----------</option>
+            <option value="Alchemist">Alchemist</option>
+            <option value="Arcane Rogue">Arcane Rogue</option>
+            <option value="Artificer">Artificer</option>
+            <option value="Aspect Warrior">Aspect Warrior</option>
+            <option value="Berzerk">Berzerk</option>
+            <option value="Celestial Servant">Celestial Servant</option>
+            <option value="Druid">Druid</option>
+            <option value="Duelist">Duelist</option>
+            <option value="Force Knight">Force Knight</option>
+            <option value="Illusionist">Illusionist</option>
+            <option value="Keeper of Equilibrium">Keeper of Equilibrium</option>
+            <option value="Knight">Knight</option>
+            <option value="Mage Blade">Mage Blade</option>
+            <option value="Mechanist">Mechanist</option>
+            <option value="Noble">Noble</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Performer">Performer</option>
+            <option value="Ranger">Ranger</option>
+            <option value="Rune Warrior">Rune Warrior</option>
+            <option value="Vitamancer">Vitamancer</option>
+            <option value="Void Disciple">Void Disciple</option>
+            <option value="Wanderer">Wanderer</option>
+            <option value="Wizard">Wizard</option>
+            <option value="Weapon Master">Weapon Master</option>
+            <option value="Wild Mage">Wild Mage</option>
+          </select>
+          <input type="number" min="0" max="10" step="1" value="0" name="advanced_level1" class="level_input">
+        </div>
+        <div class="entry">
+          <select name="advanced_class2" id="advanced_class2" class="class_select">
+            <option value="Select Class">Select Class</option>
+            <option value="-----------">-----------</option>
+            <option value="Alchemist">Alchemist</option>
+            <option value="Arcane Rogue">Arcane Rogue</option>
+            <option value="Artificer">Artificer</option>
+            <option value="Aspect Warrior">Aspect Warrior</option>
+            <option value="Berzerk">Berzerk</option>
+            <option value="Celestial Servant">Celestial Servant</option>
+            <option value="Druid">Druid</option>
+            <option value="Duelist">Duelist</option>
+            <option value="Force Knight">Force Knight</option>
+            <option value="Illusionist">Illusionist</option>
+            <option value="Keeper of Equilibrium">Keeper of Equilibrium</option>
+            <option value="Knight">Knight</option>
+            <option value="Mage Blade">Mage Blade</option>
+            <option value="Mechanist">Mechanist</option>
+            <option value="Noble">Noble</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Performer">Performer</option>
+            <option value="Ranger">Ranger</option>
+            <option value="Rune Warrior">Rune Warrior</option>
+            <option value="Vitamancer">Vitamancer</option>
+            <option value="Void Disciple">Void Disciple</option>
+            <option value="Wanderer">Wanderer</option>
+            <option value="Wizard">Wizard</option>
+            <option value="Weapon Master">Weapon Master</option>
+            <option value="Wild Mage">Wild Mage</option>
+          </select>
+          <input type="number" min="0" max="10" step="1" value="0" name="advanced_level2" class="level_input">
+        </div>
+      </div>
+      <div class="epic_class">
+        <h3>Epic Class</h3>
+        <div class="entry">
+          <select name="epic_class0" id="epic_class0" class="class_select">
+            <option value="Select Class">Select Class</option>
+            <option value="-----------">-----------</option>
+            <option value="Paragon">Paragon</option>
+            <option value="Jack-of-all-Trades">Jack-of-all-Trades</option>
+            <option value="Apotheosis">Apotheosis</option>
+          </select>
+          <input type="number" min="0" max="10" step="1" value="0" name="epic_level0" class="level_input">
+        </div>
+      </div>
+    </div>
+    <div class="luck container">
+      <h3>Luck Pool</h3>
+      <input type="number" min="0" step="1" value="0" class="luck_tally">
+    </div>
+    <div class="experience container">
+      <h3>Experience</h3>
+      <input type="number" min="0" step="1" value="0" class="experience_earned">
+    </div>
+    <div class="hit_points container">
+      <h3>Hit Points</h3>
+      <div class="current_hp">
+        <div class="entry">
+          <label for="current_hp">Current HP</label>
+          <input type="number" min="0" step="1" value="0" name="current_hp" class="current_hit_points">
+        </div>
+      </div>
+      <div class="hp_chart">
+        <div class="entry">
+          <label for="max_hp">Max (100% HP)</label>
+          <input type="number" min="0" step="1" value="0" name="max_hp">
+        </div>
+        <div class="entry">
+          <label for="injured">Injured (50% HP / -1 RB)</label>
+          <input type="number" min="0" step="1" value="0" name="injured">
+        </div>
+        <div class="entry">
+          <label for="critical">Critical (25% HP / -2 RB)</label>
+          <input type="number" min="0" step="1" value="0" name="critical">
+        </div>
+        <div class="entry">
+          <label for="maimed">Maimed (HP < 0 / -3 RB)</label>
+          <input type="number" min="0" step="1" value="0" name="maimed">
+        </div>
+      </div>
+    </div>
+    <div class="movement container">
+      <h3>Movement</h3>
+      <div class="movement_details">
+        <h4>Move (1 Action = SPD)</h4>
+        <div class="movement normal">
+          <div class="entry">
+            <label for="Normal">Normal</label>
+            <input type="number" name="Normal" placeholder="Normal">
+          </div>
+          <div class="entry">
+            <label for="Mounted">Mounted</label>
+            <input type="number" name="Mounted" placeholder="Mounted">
+          </div>
+          <div class="entry">
+            <label for="Flight">Flight</label>
+            <input type="number" name="Flight" placeholder="Flight">
+          </div>
+        </div>
+        <h4>Sprint (2 Action = SPD * 4)</h4>
+        <div class="movement sprint">
+          <div class="entry">
+            <label for="Normal">Normal</label>
+            <input type="number" name="Normal" placeholder="Normal">
+          </div>
+          <div class="entry">
+            <label for="Mounted">Mounted</label>
+            <input type="number" name="Mounted" placeholder="Mounted">
+          </div>
+          <div class="entry">
+            <label for="Flight">Flight</label>
+            <input type="number" name="Flight" placeholder="Flight">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="initiative container">
+      <h3>Initiative</h3>
+      <div class="entry"> 
+        <label for="initiative">1d10 + DEX RB</label>
+        <input type="number" min="0" step="1" value="0" name="initiative">
+      </div>
+    </div>
+    <div class="techniques container">
+      <h3>Techniques</h3>
+      <div class="entry">
+        <input name="technique0" id="technique0">
+      </div>
+      <div class="entry">
+        <input name="technique1" id="technique1">
+      </div>
+      <div class="entry">
+        <input name="technique2" id="technique2">
+      </div>
+      <div class="entry">
+        <input name="technique3" id="technique3">
+      </div>
+      <div class="entry">
+        <input name="technique4" id="technique4">
+      </div>
+      <div class="entry">
+        <input name="technique5" id="technique5">
+      </div>
+      <div class="entry">
+        <input name="technique6" id="technique6">
+      </div>
+      <div class="entry">
+        <input name="technique7" id="technique7">
+      </div>
+      <div class="entry">
+        <input name="technique8" id="technique8">
+      </div>
+      <div class="entry">
+        <input name="technique9" id="technique9">
+      </div>
+      <div class="entry">
+        <input name="technique10" id="technique10">
+      </div>
+      <div class="entry">
+        <input name="technique11" id="technique11">
+      </div>
+      <div class="entry">
+        <input name="technique12" id="technique12">
+      </div>
+      <div class="entry">
+        <input name="technique13" id="technique13">
+      </div>
+      <div class="entry">
+        <input name="technique14" id="technique14">
+      </div>
+      <div class="entry">
+        <input name="technique15" id="technique15">
+      </div>
+      <div class="entry">
+        <input name="technique16" id="technique16">
+      </div>
+      <div class="entry">
+        <input name="technique17" id="technique17">
+      </div>
+      <div class="entry">
+        <input name="technique18" id="technique18">
+      </div>
+      <div class="entry">
+        <input name="technique19" id="technique19">
+      </div>
+    </div>
+    <div class="armor container">
+      <h3>Armor</h3>
+      <div class="row">
+        <div class="entry">
+          <label for="Name">Name</label>
+          <input name="Name0" id="Name0" placeholder="Name">
+        </div>
+        <div class="entry">
+          <label for="Mobility">Mobility</label>
+          <input name="Mobility0" id="Mobility0" placeholder="Mobility">
+        </div>
+        <div class="entry">
+          <label for="AR">AR</label>
+          <input name="AR0" id="AR0" placeholder="AR">
+        </div>
+        <div class="entry">
+          <label for="Notes">Notes</label>
+          <input name="Notes0" id="Notes0" placeholder="Notes">
+        </div>
+      </div>
+      <div class="row">
+        <div class="entry">
+          <label for="Name">Name</label>
+          <input name="Name1" id="Name1" placeholder="Name">
+        </div>
+        <div class="entry">
+          <label for="Mobility">Mobility</label>
+          <input name="Mobility1" id="Mobility1" placeholder="Mobility">
+        </div>
+        <div class="entry">
+          <label for="AR">AR</label>
+          <input name="AR1" id="AR1" placeholder="AR">
+        </div>
+        <div class="entry">
+          <label for="Notes">Notes</label>
+          <input name="Notes1" id="Notes1" placeholder="Notes">
+        </div>
+      </div>
+      <div class="row">
+        <div class="entry">
+          <label for="Name">Name</label>
+          <input name="Name2" id="Name2" placeholder="Name">
+        </div>
+        <div class="entry">
+          <label for="Mobility">Mobility</label>
+          <input name="Mobility2" id="Mobility2" placeholder="Mobility">
+        </div>
+        <div class="entry">
+          <label for="AR">AR</label>
+          <input name="AR2" id="AR2" placeholder="AR">
+        </div>
+        <div class="entry">
+          <label for="Notes">Notes</label>
+          <input name="Notes2" id="Notes2" placeholder="Notes">
+        </div>
+      </div>
+    </div>
+    <div class="weapons container">
+      <h3>Weapons</h3>
+      <div class="row">
+        <div class="entry">
+          <label for="Name">Name</label>
+          <input name="Name0" id="Name0" placeholder="Name">
+        </div>
+        <div class="entry">
+          <label for="Damage">Damage</label>
+          <input name="Damage0" id="Damage0" placeholder="Damage">
+        </div>
+        <div class="entry">
+          <label for="AP">AP</label>
+          <input name="AP0" id="AP0" placeholder="AP">
+        </div>
+        <div class="entry">
+          <label for="TR">TR</label>
+          <input name="TR0" id="TR0" placeholder="TR">
+        </div>
+        <div class="entry">
+          <label for="RNG">RNG</label>
+          <input name="RNG0" id="RNG0" placeholder="RNG">
+        </div>
+      </div>
+      <div class="row">
+        <div class="entry">
+          <label for="Name">Name</label>
+          <input name="Name1" id="Name1" placeholder="Name">
+        </div>
+        <div class="entry">
+          <label for="Damage">Damage</label>
+          <input name="Damage1" id="Damage1" placeholder="Damage">
+        </div>
+        <div class="entry">
+          <label for="AP">AP</label>
+          <input name="AP1" id="AP1" placeholder="AP">
+        </div>
+        <div class="entry">
+          <label for="TR">TR</label>
+          <input name="TR1" id="TR1" placeholder="TR">
+        </div>
+        <div class="entry">
+          <label for="RNG">RNG</label>
+          <input name="RNG1" id="RNG1" placeholder="RNG">
+        </div>
+      </div>
+      <div class="row">
+        <div class="entry">
+          <label for="Name">Name</label>
+          <input name="Name2" id="Name2" placeholder="Name">
+        </div>
+        <div class="entry">
+          <label for="Damage">Damage</label>
+          <input name="Damage2" id="Damage2" placeholder="Damage">
+        </div>
+        <div class="entry">
+          <label for="AP">AP</label>
+          <input name="AP2" id="AP2" placeholder="AP">
+        </div>
+        <div class="entry">
+          <label for="TR">TR</label>
+          <input name="TR2" id="TR2" placeholder="TR">
+        </div>
+        <div class="entry">
+          <label for="RNG">RNG</label>
+          <input name="RNG2" id="RNG2" placeholder="RNG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="resistance container">
+      <h3>Resistance Skills</h3>
+    </div>
+    <div class="physical container">
+      <h3>Pysical Stats</h3>
+    </div>
+    <div class="mental container">
+      <h3>Mental Stats</h3>
+    </div>
+    <div class="social container">
+      <h3>Socal Stats</h3>
+    </div>
+    <div class="weapon container">
+      <h3>Weapon Skills</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="techniques container">
+      <h3>Techniques</h3>
+      <div class="entry">
+        <input name="technique0" id="technique0">
+      </div>
+      <div class="entry">
+        <input name="technique1" id="technique1">
+      </div>
+      <div class="entry">
+        <input name="technique2" id="technique2">
+      </div>
+      <div class="entry">
+        <input name="technique3" id="technique3">
+      </div>
+      <div class="entry">
+        <input name="technique4" id="technique4">
+      </div>
+      <div class="entry">
+        <input name="technique5" id="technique5">
+      </div>
+      <div class="entry">
+        <input name="technique6" id="technique6">
+      </div>
+      <div class="entry">
+        <input name="technique7" id="technique7">
+      </div>
+      <div class="entry">
+        <input name="technique8" id="technique8">
+      </div>
+      <div class="entry">
+        <input name="technique9" id="technique9">
+      </div>
+      <div class="entry">
+        <input name="technique10" id="technique10">
+      </div>
+      <div class="entry">
+        <input name="technique11" id="technique11">
+      </div>
+      <div class="entry">
+        <input name="technique12" id="technique12">
+      </div>
+      <div class="entry">
+        <input name="technique13" id="technique13">
+      </div>
+      <div class="entry">
+        <input name="technique14" id="technique14">
+      </div>
+      <div class="entry">
+        <input name="technique15" id="technique15">
+      </div>
+      <div class="entry">
+        <input name="technique16" id="technique16">
+      </div>
+      <div class="entry">
+        <input name="technique17" id="technique17">
+      </div>
+      <div class="entry">
+        <input name="technique18" id="technique18">
+      </div>
+      <div class="entry">
+        <input name="technique19" id="technique19">
+      </div>
+    </div>
+    <div class="inventory container">
+      <h3>Inventory</h3>
+    </div>
+    <div class="treasure container">
+      <h3>Treasure</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="magic_rating container">
+      <h3>Magic Rating</h3>
+    </div>
+    <div class="magic_pool container">
+      <h3>Magic Pool</h3>
+    </div>
+    <div class="magic_type container">
+      <h3>Magic Type</h3>
+    </div>
+    <div class="magic_type container">
+      <h3>Magic Type</h3>
+    </div>
+    <div class="magic_type container">
+      <h3>Magic Type</h3>
+    </div>
+    <div class="options container">
+      <h3>Options</h3>
+    </div>
+    <div class="launguages container">
+      <h3>Languages</h3>
+    </div>
+    <div class="character_notes container">
+      <h3>Character Notes</h3>
+    </div>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+</body>
