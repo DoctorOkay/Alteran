@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Alteran Character Sheet</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
   <div class="header">
@@ -268,7 +268,7 @@
     </div>
     <div class="initiative container">
       <h3>Initiative</h3>
-      <div class="entry"> 
+      <div class="entry">
         <label for="initiative">1d10 + DEX RB</label>
         <input type="number" min="0" step="1" value="0" name="initiative">
       </div>
@@ -466,6 +466,51 @@
   <div class="column">
     <div class="resistance container">
       <h3>Resistance Skills</h3>
+      <div class="entry">
+        <label class="entry-label" for="skill-dodge">Dodge</label>
+        <div class="radio-group">
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-1" value='1' checked>1</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-2" value='2'>2</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-3" value='3'>3</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-4" value='4'>4</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-5" value='5'>5</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-6" value='6'>6</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-7" value='7'>7</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-8" value='8'>8</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-9" value='9'>9</label>
+          <label class="radio-label"><input type="radio" name="skill-dodge" id="skill-dodge-10" value='10'>10</label>
+        </div>
+      </div>
+      <div class="entry">
+        <label for="skill-composure">Compusure</label>
+        <div class="radio-group">
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-1" value='1' checked>1</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-2" value='2'>2</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-3" value='3'>3</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-4" value='4'>4</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-5" value='5'>5</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-6" value='6'>6</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-7" value='7'>7</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-8" value='8'>8</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-9" value='9'>9</label>
+          <label class="radio-label"><input type="radio" name="skill-composure" id="skill-composure-10" value='10'>10</label>
+        </div>
+      </div>
+      <div class="entry">
+        <label for="skill-endurance">Endurance</label>
+        <div class="radio-group">
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-1" value='1' checked>1</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-2" value='2'>2</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-3" value='3'>3</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-4" value='4'>4</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-5" value='5'>5</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-6" value='6'>6</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-7" value='7'>7</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-8" value='8'>8</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-9" value='9'>9</label>
+          <label class="radio-label"><input type="radio" name="skill-endurnance" id="skill-endurnance-10" value='10'>10</label>
+        </div>
+      </div>
     </div>
     <div class="physical container">
       <h3>Pysical Stats</h3>
@@ -577,5 +622,4 @@
       <h3>Character Notes</h3>
     </div>
   </div>
-  <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
 </body>

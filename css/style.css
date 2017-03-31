@@ -71,6 +71,21 @@ CONTAINER STYLES
   .entry input[type="number"] {
     width: 36px; }
 
+
+.radio-group {
+  margin-left: 14%;
+  display:inline-block;
+}
+  .radio-group input[type="radio"] {
+    display: inline-block;
+    width: 18px;
+  }
+  .radio-group label {
+    display: inline-block;
+    width: auto;
+    font-size: .5em;
+  }
+
 .row {
   display: block; }
 
